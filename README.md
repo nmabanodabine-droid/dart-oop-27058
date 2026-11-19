@@ -11,8 +11,6 @@ Bus fare = 258 RWF
 Student discount = 18%
 
 ## Output of main.dart
-Error: name too short
-Owner: Ama | Balance: 1000 RWF
 Owner: Nshuti Mabano Dabine | Balance: 1000 RWF
 Error: top-up must be 500 to 50000 RWF
 Topped up 2000 RWF
@@ -23,6 +21,7 @@ Student discount: 46 RWF
 Paid 212 RWF
 Owner: Nshuti Mabano Dabine | Balance: 1368 RWF
 Student card: 18% off
+PS C:\Users\HP\Downloads\dart-oop-27058> 
 
 ## Part 1: Why no setter for balance?
 There is no setter for `balance` so code outside `BusCard` cannot set the balance directly to an invalid value or jump straight to a high balance. All changes to `_balance` must go through `topUp()` and `pay()`, which enforce the top-up limits and card balance check.
